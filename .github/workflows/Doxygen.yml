@@ -20,8 +20,8 @@ jobs:
         run: |
           docker run --name itk-dox itk-doxygen
           mkdir -p artifacts
-          docker cp sitk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
-          docker cp sitk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
+          docker cp itk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
+          docker cp itk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
       - name: Archive Doxygen Artifacts
         uses: actions/upload-artifact@v2
         with:
