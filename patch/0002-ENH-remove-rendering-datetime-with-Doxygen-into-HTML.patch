@@ -1,4 +1,4 @@
-From 0442f2b851b4280819d165cd94bcec2fc80f1c52 Mon Sep 17 00:00:00 2001
+From 4a40caa93bdb0b4d49aeba69ae6ba54758feaa27 Mon Sep 17 00:00:00 2001
 From: Bradley Lowekamp <blowekamp@mail.nih.gov>
 Date: Wed, 29 Dec 2021 18:10:12 +0000
 Subject: [PATCH 2/2] ENH: remove rendering datetime with Doxygen into HTML
@@ -45,7 +45,7 @@ index b7bb84d8ca..ccd5f16303 100644
  $extrastylesheet
  </head>
 diff --git a/Utilities/Doxygen/CMakeLists.txt b/Utilities/Doxygen/CMakeLists.txt
-index 61076312b0..e7f49e358e 100644
+index 61076312b0..11f3bb6454 100644
 --- a/Utilities/Doxygen/CMakeLists.txt
 +++ b/Utilities/Doxygen/CMakeLists.txt
 @@ -140,6 +140,16 @@ if (ITK_BUILD_DOCUMENTATION)
@@ -61,7 +61,7 @@ index 61076312b0..e7f49e358e 100644
 +   endif()
 +
 +   configure_file(${CMAKE_CURRENT_LIST_DIR}/build_text.js.in
-+     "${ITK_DOXYGEN_OUTPUT_DIR}/html/build_text.js")
++     "${ITK_BINARY_DIR}/Utilities/Doxygen//html/build_text.js")
  
    find_package( LATEX )
  
