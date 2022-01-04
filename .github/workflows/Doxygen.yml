@@ -32,6 +32,7 @@ jobs:
       - name: Update gh-pages
         if: github.ref == 'refs/heads/master'
         run: |
+          tar -zxf artifacts/ITKDoxygen-*.tar.gz
           touch html/.nojekyll
           git update-ref refs/heads/${TARGET_BRANCH} origin/${TARGET_BRANCH}
           ./update-gh-pages.sh html
