@@ -1,0 +1,44 @@
+name: doxygen
+
+on:
+  push:
+    branches: master
+    schedule:
+      - cron: '0 0 * * *'
+
+jobs:
+  doxygen:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker Image for Doxygen
+        run: |
+          docker build -f Dockerfile -t itk-doxygen .
+      - name: Docker Doxygen generation
+        run: |
+          docker run --name itk-dox itk-doxygen
+          mkdir -p artifacts
+          docker cp sitk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
+          docker cp sitk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
+      - name: Archive Doxygen Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: doxygen
+          path: |
+            artifacts/ITKDoxygenXML-*.tar.gz
+            artifacts/ITKDoxygen-*.tar.gz
+      - name: Update gh-pages
+        if: github.ref == 'refs/heads/master'
+        run: |
+          touch html/.nojekyll
+          git update-ref refs/heads/${TARGET_BRANCH} origin/${TARGET_BRANCH}
+          ./update-gh-pages.sh html
+          repo_uri="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push $repo_uri ${TARGET_BRANCH}
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+          TARGET_BRANCH: 'gh-pages'
+
+
