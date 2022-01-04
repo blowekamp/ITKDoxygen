@@ -1,0 +1,66 @@
+From 828ffb5176c42e6fd4d3c056e0a6e116e2f28989 Mon Sep 17 00:00:00 2001
+From: Bradley Lowekamp <blowekamp@mail.nih.gov>
+Date: Wed, 29 Dec 2021 15:58:02 +0000
+Subject: [PATCH 1/2] ENH: Doxygen use svg and mathjax
+
+Replace the Doxygen PNG object hierarchy figures with SVG files. Also
+replace rendered math latex with mathjax javascript.
+
+The size of the HTML Doxygen is reduced from 2.7GB to 884MB a 67%
+reduction in size.
+---
+ Utilities/Doxygen/CMakeLists.txt    | 5 +----
+ Utilities/Doxygen/doxygen.config.in | 6 +++---
+ 2 files changed, 4 insertions(+), 7 deletions(-)
+
+diff --git a/Utilities/Doxygen/CMakeLists.txt b/Utilities/Doxygen/CMakeLists.txt
+index f73fa1e347..61076312b0 100644
+--- a/Utilities/Doxygen/CMakeLists.txt
++++ b/Utilities/Doxygen/CMakeLists.txt
+@@ -140,11 +140,8 @@ if (ITK_BUILD_DOCUMENTATION)
+   file(COPY workbox-cli-config.js serviceWorker.js.in
+     DESTINATION ${ITK_BINARY_DIR}/Utilities/Doxygen/)
+ 
+-  find_package( LATEX )
+ 
+-  if( NOT LATEX_COMPILER )
+-    message( "Warning: LaTeX not found. Formulas will not be generated in documentation." )
+-  endif()
++  find_package( LATEX )
+ 
+   # Custom command to generate a examples page which include all ITK examples
+   add_custom_command( OUTPUT "${ITK_BINARY_DIR}/Documentation/Doxygen/Examples.dox"
+diff --git a/Utilities/Doxygen/doxygen.config.in b/Utilities/Doxygen/doxygen.config.in
+index 644994ca77..2b802753a1 100644
+--- a/Utilities/Doxygen/doxygen.config.in
++++ b/Utilities/Doxygen/doxygen.config.in
+@@ -1533,7 +1533,7 @@ FORMULA_TRANSPARENT    = YES
+ # The default value is: NO.
+ # This tag requires that the tag GENERATE_HTML is set to YES.
+ 
+-USE_MATHJAX            = NO
++USE_MATHJAX            = YES
+ 
+ # When MathJax is enabled you can set the default output format to be used for
+ # the MathJax output. See the MathJax site (see:
+@@ -1556,7 +1556,7 @@ MATHJAX_FORMAT         = HTML-CSS
+ # The default value is: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/.
+ # This tag requires that the tag USE_MATHJAX is set to YES.
+ 
+-MATHJAX_RELPATH        = http://www.mathjax.org/mathjax
++MATHJAX_RELPATH        = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/
+ 
+ # The MATHJAX_EXTENSIONS tag can be used to specify one or more MathJax
+ # extension names that should be enabled during MathJax rendering. For example
+@@ -2476,7 +2476,7 @@ DIRECTORY_GRAPH        = @ITK_DOXYGEN_DIAGRAMS@
+ # The default value is: png.
+ # This tag requires that the tag HAVE_DOT is set to YES.
+ 
+-DOT_IMAGE_FORMAT       = png
++DOT_IMAGE_FORMAT       = svg
+ 
+ # If DOT_IMAGE_FORMAT is set to svg, then this option can be set to YES to
+ # enable generation of interactive SVG images that allow zooming and panning.
+-- 
+2.25.1
+
