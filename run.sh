@@ -15,7 +15,7 @@ if [ ! -d ${SRC_DIR} ]; then
     ( git clone https://github.com/InsightSoftwareConsortium/ITK.git ${SRC_DIR} &&
           cd ${SRC_DIR} &&
           git checkout ${GIT_TAG} &&
-          git apply /tmp/patch/*.patch
+          if [ -d /tmp/patch ]; then git apply /tmp/patch/*.patch; fi
     )
 fi
 

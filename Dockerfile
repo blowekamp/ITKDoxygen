@@ -24,7 +24,9 @@ RUN git clone https://github.com/doxygen/doxygen.git && \
 RUN git config --global url."https://github.com/InsightSoftwareConsortium/".insteadOf "https://itk.org/"
 
 COPY run.sh /tmp
-COPY patch /tmp/patch
+
+# Currently not needed
+# COPY patch /tmp/patch
 
 WORKDIR /work
 
