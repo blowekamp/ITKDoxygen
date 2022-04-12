@@ -25,6 +25,7 @@ mkdir -p ${BLD_DIR} && \
     cmake -G Ninja\
           -DITK_BUILD_DOCUMENTATION=ON\
           -DITK_DOXYGEN_XML:BOOL=ON\
+          -DBUILD_TESTING:BOOL=OFF \
           ${SRC_DIR} && \
     cmake --build . --target Documentation && \
     cd ${BLD_DIR}/Utilities/Doxygen && \
