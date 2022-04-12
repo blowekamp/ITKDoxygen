@@ -15,7 +15,7 @@ RUN apt-get update && \
 
 RUN git clone https://github.com/doxygen/doxygen.git && \
     ( cd doxygen && \
-      git checkout Release_1_8_17 && \
+      git checkout Release_1_9_3 && \
       mkdir bld && cd bld && \
       cmake -G Ninja -DCMAKE_BUILD_TYPE=Release .. && \
       ninja install) && \
