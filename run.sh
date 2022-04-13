@@ -25,6 +25,7 @@ mkdir -p ${BLD_DIR} && \
     cmake -G Ninja\
           -DITK_BUILD_DOCUMENTATION=ON\
           -DITK_DOXYGEN_XML:BOOL=ON\
+          -DITK_DOXYGEN_SERVER_BASED_SEARCH:BOOL=OFF\
           -DBUILD_TESTING:BOOL=OFF \
           ${SRC_DIR} && \
     cmake --build . --target Documentation && \
