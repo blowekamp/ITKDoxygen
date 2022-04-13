@@ -25,8 +25,7 @@ RUN git config --global url."https://github.com/InsightSoftwareConsortium/".inst
 
 COPY run.sh /tmp
 
-# Currently not needed
-# COPY patch /tmp/patch
+COPY patch /tmp/patch
 
 WORKDIR /work
 
