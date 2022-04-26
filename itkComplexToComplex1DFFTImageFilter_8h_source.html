@@ -123,56 +123,60 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  itkFactoryOnlyNewMacro(<a class="code" href="classitk_1_1LightObject.html">Self</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a8d5a17ec0239a02ea2ca55281be4a380">   71</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a8d5a17ec0239a02ea2ca55281be4a380">TransformDirectionType</a> = <span class="keyword">enum</span> { DIRECT = 1, INVERSE };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  itkSetMacro(<a class="code" href="classTransformDirection.html">TransformDirection</a>, TransformDirectionType);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  itkGetConstMacro(<a class="code" href="classTransformDirection.html">TransformDirection</a>, TransformDirectionType);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  itkGetConstMacro(Direction, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  itkSetClampMacro(Direction, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, 0, InputImageType::ImageDimension - 1);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespaceitk.html#ab7ab0be12978d8285c89179db3969651">SizeValueType</a></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">   90</a></span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">GetSizeGreatestPrimeFactor</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> 2;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html">ComplexToComplex1DFFTImageFilter</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  ~<a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html">ComplexToComplex1DFFTImageFilter</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3">   71</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3">TransformDirectionType</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3acb2bff5e64668463bd7993be7a6e9fdb">   73</a></span>&#160;    DIRECT = 1,</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3a7a1253e8fb47437e93912450e2527254">   74</a></span>&#160;    INVERSE</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  itkSetMacro(<a class="code" href="classTransformDirection.html">TransformDirection</a>, TransformDirectionType);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  itkGetConstMacro(<a class="code" href="classTransformDirection.html">TransformDirection</a>, TransformDirectionType);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  itkGetConstMacro(Direction, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  itkSetClampMacro(Direction, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, 0, InputImageType::ImageDimension - 1);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespaceitk.html#ab7ab0be12978d8285c89179db3969651">SizeValueType</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">   94</a></span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">GetSizeGreatestPrimeFactor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  PrintSelf(std::ostream &amp; os, <a class="code" href="classitk_1_1Indent.html">Indent</a> indent) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  GenerateInputRequestedRegion() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  EnlargeOutputRequestedRegion(<a class="code" href="classitk_1_1DataObject.html">DataObject</a> * output) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a91438acc0fd24cd3643d2bd6b3346d78">  109</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_Direction{ 0 };</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html">ComplexToComplex1DFFTImageFilter</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  ~<a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html">ComplexToComplex1DFFTImageFilter</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  PrintSelf(std::ostream &amp; os, <a class="code" href="classitk_1_1Indent.html">Indent</a> indent) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  GenerateInputRequestedRegion() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  EnlargeOutputRequestedRegion(<a class="code" href="classitk_1_1DataObject.html">DataObject</a> * output) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#aef6c5544a51ecd499d30758843e5d593">  112</a></span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a8d5a17ec0239a02ea2ca55281be4a380">TransformDirectionType</a> m_TransformDirection{ DIRECT };</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;} <span class="comment">// namespace itk</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#ifndef ITK_MANUAL_INSTANTIATION</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#  include &quot;itkComplexToComplex1DFFTImageFilter.hxx&quot;</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a91438acc0fd24cd3643d2bd6b3346d78">  113</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_Direction{ 0 };</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#aef6c5544a51ecd499d30758843e5d593">  116</a></span>&#160;  <a class="code" href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3">TransformDirectionType</a> m_TransformDirection{ DIRECT };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// namespace itk</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#ifdef ITK_FFTIMAGEFILTERINIT_FACTORY_REGISTER_MANAGER</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#  include &quot;itkFFTImageFilterInitFactoryRegisterManager.h&quot;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#ifndef ITK_MANUAL_INSTANTIATION</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#  include &quot;itkComplexToComplex1DFFTImageFilter.hxx&quot;</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // itkComplexToComplex1DFFTImageFilter_h</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef ITK_FFTIMAGEFILTERINIT_FACTORY_REGISTER_MANAGER</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#  include &quot;itkFFTImageFilterInitFactoryRegisterManager.h&quot;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif // itkComplexToComplex1DFFTImageFilter_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassTransformDirection_html"><div class="ttname"><a href="classTransformDirection.html">TransformDirection</a></div></div>
 <div class="ttc" id="aitkImage_8h_html"><div class="ttname"><a href="itkImage_8h.html">itkImage.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1SmartPointer_html"><div class="ttname"><a href="classitk_1_1SmartPointer.html">itk::SmartPointer&lt; Self &gt;</a></div></div>
 <div class="ttc" id="aclassitk_1_1Indent_html"><div class="ttname"><a href="classitk_1_1Indent.html">itk::Indent</a></div><div class="ttdoc">Control indentation during Print() invocation.</div><div class="ttdef"><b>Definition:</b> <a href="itkIndent_8h_source.html#l00049">itkIndent.h:49</a></div></div>
-<div class="ttc" id="aclassitk_1_1ComplexToComplex1DFFTImageFilter_html_a90519514015ec0c0247cf069ea70986f"><div class="ttname"><a href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">itk::ComplexToComplex1DFFTImageFilter::GetSizeGreatestPrimeFactor</a></div><div class="ttdeci">virtual SizeValueType GetSizeGreatestPrimeFactor() const</div><div class="ttdef"><b>Definition:</b> <a href="itkComplexToComplex1DFFTImageFilter_8h_source.html#l00090">itkComplexToComplex1DFFTImageFilter.h:90</a></div></div>
+<div class="ttc" id="aclassitk_1_1ComplexToComplex1DFFTImageFilter_html_a90519514015ec0c0247cf069ea70986f"><div class="ttname"><a href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a90519514015ec0c0247cf069ea70986f">itk::ComplexToComplex1DFFTImageFilter::GetSizeGreatestPrimeFactor</a></div><div class="ttdeci">virtual SizeValueType GetSizeGreatestPrimeFactor() const</div><div class="ttdef"><b>Definition:</b> <a href="itkComplexToComplex1DFFTImageFilter_8h_source.html#l00094">itkComplexToComplex1DFFTImageFilter.h:94</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageToImageFilter_html"><div class="ttname"><a href="classitk_1_1ImageToImageFilter.html">itk::ImageToImageFilter</a></div><div class="ttdoc">Base class for filters that take an image as input and produce an image as output.</div><div class="ttdef"><b>Definition:</b> <a href="itkImageToImageFilter_8h_source.html#l00108">itkImageToImageFilter.h:108</a></div></div>
 <div class="ttc" id="aclassitk_1_1LightObject_html"><div class="ttname"><a href="classitk_1_1LightObject.html">itk::LightObject</a></div><div class="ttdoc">Light weight base class for most itk classes.</div><div class="ttdef"><b>Definition:</b> <a href="itkLightObject_8h_source.html#l00055">itkLightObject.h:55</a></div></div>
 <div class="ttc" id="aitkMacro_8h_html"><div class="ttname"><a href="itkMacro_8h.html">itkMacro.h</a></div></div>
@@ -182,7 +186,7 @@ $(function() {
 <div class="ttc" id="aitkImageToImageFilter_8h_html"><div class="ttname"><a href="itkImageToImageFilter_8h.html">itkImageToImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageSource_html_a480f6a15f7241d2c63c1b4131246ff03"><div class="ttname"><a href="classitk_1_1ImageSource.html#a480f6a15f7241d2c63c1b4131246ff03">itk::ImageSource&lt; TInputImage &gt;::OutputImageRegionType</a></div><div class="ttdeci">typename OutputImageType::RegionType OutputImageRegionType</div><div class="ttdef"><b>Definition:</b> <a href="itkImageSource_8h_source.html#l00092">itkImageSource.h:92</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div><div class="ttdoc">The &quot;itk&quot; namespace contains all Insight Segmentation and Registration Toolkit (ITK) classes....</div><div class="ttdef"><b>Definition:</b> <a href="itkAnnulusOperator_8h_source.html#l00024">itkAnnulusOperator.h:24</a></div></div>
-<div class="ttc" id="aclassitk_1_1ComplexToComplex1DFFTImageFilter_html_a8d5a17ec0239a02ea2ca55281be4a380"><div class="ttname"><a href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a8d5a17ec0239a02ea2ca55281be4a380">itk::ComplexToComplex1DFFTImageFilter&lt; TInputImage, TInputImage &gt;::TransformDirectionType</a></div><div class="ttdeci">enum { DIRECT=1, INVERSE } TransformDirectionType</div><div class="ttdef"><b>Definition:</b> <a href="itkComplexToComplex1DFFTImageFilter_8h_source.html#l00071">itkComplexToComplex1DFFTImageFilter.h:71</a></div></div>
+<div class="ttc" id="aclassitk_1_1ComplexToComplex1DFFTImageFilter_html_a3d473ca1e9d1403f3fd523f2ca3302a3"><div class="ttname"><a href="classitk_1_1ComplexToComplex1DFFTImageFilter.html#a3d473ca1e9d1403f3fd523f2ca3302a3">itk::ComplexToComplex1DFFTImageFilter&lt; TInputImage, TInputImage &gt;::TransformDirectionType</a></div><div class="ttdeci">TransformDirectionType</div><div class="ttdef"><b>Definition:</b> <a href="itkComplexToComplex1DFFTImageFilter_8h_source.html#l00071">itkComplexToComplex1DFFTImageFilter.h:71</a></div></div>
 <div class="ttc" id="anamespaceitk_html_ab7ab0be12978d8285c89179db3969651"><div class="ttname"><a href="namespaceitk.html#ab7ab0be12978d8285c89179db3969651">itk::SizeValueType</a></div><div class="ttdeci">unsigned long SizeValueType</div><div class="ttdef"><b>Definition:</b> <a href="itkIntTypes_8h_source.html#l00083">itkIntTypes.h:83</a></div></div>
 <div class="ttc" id="aclassitk_1_1ImageSource_html_a496eaee630f2f99cc015aa7a6edb2db5"><div class="ttname"><a href="classitk_1_1ImageSource.html#a496eaee630f2f99cc015aa7a6edb2db5">itk::ImageSource&lt; TInputImage &gt;::OutputImageType</a></div><div class="ttdeci">TInputImage OutputImageType</div><div class="ttdef"><b>Definition:</b> <a href="itkImageSource_8h_source.html#l00090">itkImageSource.h:90</a></div></div>
 <div class="ttc" id="aclassitk_1_1DataObject_html"><div class="ttname"><a href="classitk_1_1DataObject.html">itk::DataObject</a></div><div class="ttdoc">Base class for all data objects in ITK.</div><div class="ttdef"><b>Definition:</b> <a href="itkDataObject_8h_source.html#l00293">itkDataObject.h:293</a></div></div>
