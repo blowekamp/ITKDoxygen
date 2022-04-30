@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (points0-&gt;Size() != points1-&gt;Size())</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of cells!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of points!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -231,7 +231,7 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (pointData0-&gt;Size() != pointData1-&gt;Size())</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of cells!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of point data!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    PointDataContainerIterator pdIt0 = pointData0-&gt;Begin();</div>
@@ -282,7 +282,7 @@ $(function() {
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> (cellData0-&gt;Size() != cellData1-&gt;Size())</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of cells!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;Input mesh and output mesh have different number of cell data!&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
@@ -433,7 +433,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aitkAddImageFilter_8h_html_ac831674d6d3f7cd2148ae944cbaa7c9d"><div class="ttname"><a href="itkAddImageFilter_8h.html#ac831674d6d3f7cd2148ae944cbaa7c9d">Pointer</a></div><div class="ttdeci">SmartPointer&lt; Self &gt; Pointer</div><div class="ttdef"><b>Definition:</b> <a href="itkAddImageFilter_8h_source.html#l00092">itkAddImageFilter.h:92</a></div></div>
 <div class="ttc" id="aclassitk_1_1MeshFileWriter_html"><div class="ttname"><a href="classitk_1_1MeshFileWriter.html">itk::MeshFileWriter</a></div><div class="ttdoc">Writes mesh data to a single file.</div><div class="ttdef"><b>Definition:</b> <a href="itkMeshFileWriter_8h_source.html#l00052">itkMeshFileWriter.h:52</a></div></div>
-<div class="ttc" id="aclassitk_1_1MeshFileReader_html"><div class="ttname"><a href="classitk_1_1MeshFileReader.html">itk::MeshFileReader</a></div><div class="ttdoc">Mesh source that reads mesh data from a single file.</div><div class="ttdef"><b>Definition:</b> <a href="itkMeshFileReader_8h_source.html#l00080">itkMeshFileReader.h:80</a></div></div>
+<div class="ttc" id="aclassitk_1_1MeshFileReader_html"><div class="ttname"><a href="classitk_1_1MeshFileReader.html">itk::MeshFileReader</a></div><div class="ttdoc">Mesh source that reads mesh data from a single file.</div><div class="ttdef"><b>Definition:</b> <a href="itkMeshFileReader_8h_source.html#l00081">itkMeshFileReader.h:81</a></div></div>
 <div class="ttc" id="aitkMeshFileTestHelper_8h_html_a7bf590d8f34931d49aa9daf010a51dd2"><div class="ttname"><a href="itkMeshFileTestHelper_8h.html#a7bf590d8f34931d49aa9daf010a51dd2">TestCellsContainer</a></div><div class="ttdeci">int TestCellsContainer(typename TMesh::CellsContainerPointer cells0, typename TMesh::CellsContainerPointer cells1)</div><div class="ttdef"><b>Definition:</b> <a href="itkMeshFileTestHelper_8h_source.html#l00086">itkMeshFileTestHelper.h:86</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1Math_html_ae11bf7c4806c95e4be91dedc52bf50ad"><div class="ttname"><a href="namespaceitk_1_1Math.html#ae11bf7c4806c95e4be91dedc52bf50ad">itk::Math::NotExactlyEquals</a></div><div class="ttdeci">bool NotExactlyEquals(const TInput1 &amp;x1, const TInput2 &amp;x2)</div><div class="ttdef"><b>Definition:</b> <a href="itkMath_8h_source.html#l00733">itkMath.h:733</a></div></div>
 <div class="ttc" id="aitkMeshFileTestHelper_8h_html_a7153bcc4f414fa494b9ba508cfd876e8"><div class="ttname"><a href="itkMeshFileTestHelper_8h.html#a7153bcc4f414fa494b9ba508cfd876e8">TestCellDataContainer</a></div><div class="ttdeci">int TestCellDataContainer(typename TMesh::CellDataContainerPointer cellData0, typename TMesh::CellDataContainerPointer cellData1)</div><div class="ttdef"><b>Definition:</b> <a href="itkMeshFileTestHelper_8h_source.html#l00199">itkMeshFileTestHelper.h:199</a></div></div>

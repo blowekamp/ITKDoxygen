@@ -212,7 +212,7 @@
 <text text-anchor="middle" x="326" y="-2267.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::LineCell</text>
 <text text-anchor="middle" x="326" y="-2256.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::PointSet</text>
 <text text-anchor="middle" x="326" y="-2245.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::PolygonCell</text>
-<text text-anchor="middle" x="326" y="-2234.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::QuadraticEdgeCell</text>
+<text text-anchor="middle" x="326" y="-2234.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::PolyLineCell</text>
 <text text-anchor="middle" x="326" y="-2223.61" font-family="Helvetica,sans-Serif" font-size="10.00">...</text>
 </g>
 <!-- Node1&#45;&gt;Node23 -->
