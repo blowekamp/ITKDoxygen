@@ -12,7 +12,7 @@
 <!-- Node7 -->
 <g id="node1" class="node">
 <title>Node7</title>
-<g id="a_node1"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="The Insight Toolkit includes several ways to process the data using objects such as adaptors,...">
+<g id="a_node1"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="ITK includes several ways to process the data using objects such as adaptors, functions,...">
 <polygon fill="white" stroke="black" points="561,-341.58 426,-341.58 426,-322.58 561,-322.58 561,-341.58"/>
 <text text-anchor="middle" x="493.5" y="-329.58" font-family="Helvetica,sans-Serif" font-size="10.00">Data Processing Objects</text>
 </a>
@@ -55,7 +55,7 @@
 <!-- Node5 -->
 <g id="node4" class="node">
 <title>Node5</title>
-<g id="a_node4"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="The Insight Toolkit includes several data representation objects such as Image, Mesh,...">
+<g id="a_node4"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="ITK includes several data representation objects such as itk::Image, itk::Mesh, itk::Point,...">
 <polygon fill="white" stroke="black" points="552,-248.08 435,-248.08 435,-218.08 552,-218.08 552,-248.08"/>
 <text text-anchor="start" x="443" y="-236.08" font-family="Helvetica,sans-Serif" font-size="10.00">Data Representation</text>
 <text text-anchor="middle" x="493.5" y="-225.08" font-family="Helvetica,sans-Serif" font-size="10.00"> Objects</text>
@@ -120,7 +120,7 @@
 <!-- Node3 -->
 <g id="node7" class="node">
 <title>Node3</title>
-<g id="a_node7"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="The Insight Toolkit includes several ways to access data through the user of iterators,...">
+<g id="a_node7"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="ITK includes several ways to access data through the user of iterators, pointers, indexes,...">
 <polygon fill="white" stroke="black" points="551.5,-31.58 435.5,-31.58 435.5,-12.58 551.5,-12.58 551.5,-31.58"/>
 <text text-anchor="middle" x="493.5" y="-19.58" font-family="Helvetica,sans-Serif" font-size="10.00">Data Access Objects</text>
 </a>

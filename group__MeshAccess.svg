@@ -40,7 +40,7 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="The Insight Toolkit includes several ways to access data through the user of iterators,...">
+<g id="a_node3"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="ITK includes several ways to access data through the user of iterators, pointers, indexes,...">
 <polygon fill="white" stroke="black" points="116,-19 0,-19 0,0 116,0 116,-19"/>
 <text text-anchor="middle" x="58" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Data Access Objects</text>
 </a>

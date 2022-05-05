@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="The Insight Toolkit includes several ways to process the data using objects such as adaptors,...">
+<g id="a_node2"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="ITK includes several ways to process the data using objects such as adaptors, functions,...">
 <polygon fill="white" stroke="black" points="135,-293.78 0,-293.78 0,-274.78 135,-274.78 135,-293.78"/>
 <text text-anchor="middle" x="67.5" y="-281.78" font-family="Helvetica,sans-Serif" font-size="10.00">Data Processing Objects</text>
 </a>
@@ -45,7 +45,7 @@
 <!-- Node8 -->
 <g id="node3" class="node">
 <title>Node8</title>
-<g id="a_node3"><a xlink:href="group__Numerics.html" target="_top" xlink:title="Insight provides support for numerical operations at two levels. First, Insight uses an external libr...">
+<g id="a_node3"><a xlink:href="group__Numerics.html" target="_top" xlink:title="ITK provides support for numerical operations at two levels. First, ITK uses an external library call...">
 <polygon fill="white" stroke="black" points="519,-440.78 456,-440.78 456,-421.78 519,-421.78 519,-440.78"/>
 <text text-anchor="middle" x="487.5" y="-428.78" font-family="Helvetica,sans-Serif" font-size="10.00">Numerics</text>
 </a>

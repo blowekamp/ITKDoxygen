@@ -22,16 +22,16 @@
 <g id="node2" class="node">
 <title>Node5</title>
 <g id="a_node2"><a xlink:href="group__CannotBeStreamed.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="562.5,-501.63 457.5,-501.63 457.5,-471.63 562.5,-471.63 562.5,-501.63"/>
-<text text-anchor="start" x="465.5" y="-489.63" font-family="Helvetica,sans-Serif" font-size="10.00">Filters that cannot</text>
-<text text-anchor="middle" x="510" y="-478.63" font-family="Helvetica,sans-Serif" font-size="10.00"> be streamed</text>
+<polygon fill="white" stroke="black" points="570,-501.63 450,-501.63 450,-471.63 570,-471.63 570,-501.63"/>
+<text text-anchor="start" x="458" y="-489.63" font-family="Helvetica,sans-Serif" font-size="10.00">Streaming&#45;unfriendly</text>
+<text text-anchor="middle" x="510" y="-478.63" font-family="Helvetica,sans-Serif" font-size="10.00"> Filters</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M188.19,-263.24C189.45,-297.32 198.71,-413.1 266,-464.63 320.65,-506.48 403.83,-504.06 457.3,-496.71"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M188.19,-263.24C189.45,-297.32 198.71,-413.1 266,-464.63 318.21,-504.61 396.47,-504.19 449.97,-497.67"/>
 <text text-anchor="start" x="266" y="-602.63" font-family="Helvetica,sans-Serif" font-size="10.00">itk::BSplineDownsampleImage</text>
 <text text-anchor="middle" x="343" y="-591.63" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
 <text text-anchor="start" x="266" y="-580.63" font-family="Helvetica,sans-Serif" font-size="10.00">itk::BSplineL2ResampleImage</text>
@@ -47,16 +47,15 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="group__Streamed.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="560.5,-423.63 459.5,-423.63 459.5,-393.63 560.5,-393.63 560.5,-423.63"/>
-<text text-anchor="start" x="467.5" y="-411.63" font-family="Helvetica,sans-Serif" font-size="10.00">Filters supporting</text>
-<text text-anchor="middle" x="510" y="-400.63" font-family="Helvetica,sans-Serif" font-size="10.00"> Streaming</text>
+<polygon fill="white" stroke="black" points="560,-418.13 460,-418.13 460,-399.13 560,-399.13 560,-418.13"/>
+<text text-anchor="middle" x="510" y="-406.13" font-family="Helvetica,sans-Serif" font-size="10.00">Streaming Filters</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M190.44,-263.49C197.3,-288.97 219.44,-357.09 266,-386.63 297.07,-406.34 397.91,-409.43 459.49,-409.38"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M190.44,-263.49C197.3,-288.97 219.44,-357.09 266,-386.63 297.12,-406.37 398.2,-409.44 459.75,-409.38"/>
 <text text-anchor="middle" x="343" y="-455.63" font-family="Helvetica,sans-Serif" font-size="10.00">itk::BinShrinkImageFilter</text>
 <text text-anchor="middle" x="343" y="-444.63" font-family="Helvetica,sans-Serif" font-size="10.00">itk::FlipImageFilter</text>
 <text text-anchor="middle" x="343" y="-433.63" font-family="Helvetica,sans-Serif" font-size="10.00">itk::PermuteAxesImageFilter</text>

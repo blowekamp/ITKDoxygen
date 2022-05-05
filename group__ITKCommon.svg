@@ -41,7 +41,7 @@
 <!-- Node23 -->
 <g id="node4" class="node">
 <title>Node23</title>
-<g id="a_node4"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="The Insight Toolkit includes several ways to process the data using objects such as adaptors,...">
+<g id="a_node4"><a xlink:href="group__DataProcessing.html" target="_top" xlink:title="ITK includes several ways to process the data using objects such as adaptors, functions,...">
 <polygon fill="white" stroke="black" points="583,-2056.11 448,-2056.11 448,-2037.11 583,-2037.11 583,-2056.11"/>
 <text text-anchor="middle" x="515.5" y="-2044.11" font-family="Helvetica,sans-Serif" font-size="10.00">Data Processing Objects</text>
 </a>
@@ -105,7 +105,7 @@
 <!-- Node3 -->
 <g id="node11" class="node">
 <title>Node3</title>
-<g id="a_node11"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="The Insight Toolkit includes several data representation objects such as Image, Mesh,...">
+<g id="a_node11"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="ITK includes several data representation objects such as itk::Image, itk::Mesh, itk::Point,...">
 <polygon fill="white" stroke="black" points="574,-1136.61 457,-1136.61 457,-1106.61 574,-1106.61 574,-1136.61"/>
 <text text-anchor="start" x="465" y="-1124.61" font-family="Helvetica,sans-Serif" font-size="10.00">Data Representation</text>
 <text text-anchor="middle" x="515.5" y="-1113.61" font-family="Helvetica,sans-Serif" font-size="10.00"> Objects</text>
@@ -452,17 +452,16 @@
 <!-- Node20 -->
 <g id="node22" class="node">
 <title>Node20</title>
-<g id="a_node22"><a xlink:href="group__TensorObjects.html" target="_top" xlink:title="This category includes the objects required for representing diffusion tensor images in ITK.">
-<polygon fill="white" stroke="black" points="569,-349.61 462,-349.61 462,-319.61 569,-319.61 569,-349.61"/>
-<text text-anchor="start" x="470" y="-337.61" font-family="Helvetica,sans-Serif" font-size="10.00">Objects Related to</text>
-<text text-anchor="middle" x="515.5" y="-326.61" font-family="Helvetica,sans-Serif" font-size="10.00"> Tensor Images</text>
+<g id="a_node22"><a xlink:href="group__TensorObjects.html" target="_top" xlink:title="Objects required for representing diffusion tensor images in ITK.">
+<polygon fill="white" stroke="black" points="576.5,-344.11 454.5,-344.11 454.5,-325.11 576.5,-325.11 576.5,-344.11"/>
+<text text-anchor="middle" x="515.5" y="-332.11" font-family="Helvetica,sans-Serif" font-size="10.00">Tensor Image Objects</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node20 -->
 <g id="edge19" class="edge">
 <title>Node1&#45;&gt;Node20</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M166.87,-981.64C169.85,-903.11 191.3,-385.93 241,-340.61 272.14,-312.2 391.58,-320.3 461.91,-327.94"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M166.87,-981.64C169.85,-903.11 191.3,-385.93 241,-340.61 271.05,-313.2 383.28,-319.78 454.3,-327.13"/>
 <text text-anchor="middle" x="326" y="-365.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::DiffusionTensor3D</text>
 <text text-anchor="start" x="259.5" y="-354.61" font-family="Helvetica,sans-Serif" font-size="10.00">itk::SymmetricSecondRank</text>
 <text text-anchor="middle" x="326" y="-343.61" font-family="Helvetica,sans-Serif" font-size="10.00">Tensor</text>
@@ -528,7 +527,7 @@
 <!-- Node6 -->
 <g id="node27" class="node">
 <title>Node6</title>
-<g id="a_node27"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="The Insight Toolkit includes several ways to access data through the user of iterators,...">
+<g id="a_node27"><a xlink:href="group__DataAccess.html" target="_top" xlink:title="ITK includes several ways to access data through the user of iterators, pointers, indexes,...">
 <polygon fill="white" stroke="black" points="573.5,-43.11 457.5,-43.11 457.5,-24.11 573.5,-24.11 573.5,-43.11"/>
 <text text-anchor="middle" x="515.5" y="-31.11" font-family="Helvetica,sans-Serif" font-size="10.00">Data Access Objects</text>
 </a>

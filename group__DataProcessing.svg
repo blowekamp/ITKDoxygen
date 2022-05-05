@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:title="The Insight Toolkit includes several ways to process the data using objects such as adaptors,...">
+<g id="a_node2"><a xlink:title="ITK includes several ways to process the data using objects such as adaptors, functions,...">
 <polygon fill="#bfbfbf" stroke="black" points="135,-366.16 0,-366.16 0,-347.16 135,-347.16 135,-366.16"/>
 <text text-anchor="middle" x="67.5" y="-354.16" font-family="Helvetica,sans-Serif" font-size="10.00">Data Processing Objects</text>
 </a>

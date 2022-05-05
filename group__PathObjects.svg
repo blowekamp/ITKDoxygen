@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="The Insight Toolkit includes several data representation objects such as Image, Mesh,...">
+<g id="a_node2"><a xlink:href="group__DataRepresentation.html" target="_top" xlink:title="ITK includes several data representation objects such as itk::Image, itk::Mesh, itk::Point,...">
 <polygon fill="white" stroke="black" points="117,-94.39 0,-94.39 0,-64.39 117,-64.39 117,-94.39"/>
 <text text-anchor="start" x="8" y="-82.39" font-family="Helvetica,sans-Serif" font-size="10.00">Data Representation</text>
 <text text-anchor="middle" x="58.5" y="-71.39" font-family="Helvetica,sans-Serif" font-size="10.00"> Objects</text>

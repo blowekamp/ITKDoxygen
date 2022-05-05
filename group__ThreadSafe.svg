@@ -12,7 +12,7 @@
 <!-- Node2 -->
 <g id="node1" class="node">
 <title>Node2</title>
-<g id="a_node1"><a xlink:href="group__ThreadSafetyGroup.html" target="_top" xlink:title="This groups catalog classes according to its compliance with thread safety. ITK is designed to be thr...">
+<g id="a_node1"><a xlink:href="group__ThreadSafetyGroup.html" target="_top" xlink:title="Classes catalogued according to their compliance with thread safety.">
 <polygon fill="white" stroke="black" points="85,-19 0,-19 0,0 85,0 85,-19"/>
 <text text-anchor="middle" x="42.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Thread Safety</text>
 </a>

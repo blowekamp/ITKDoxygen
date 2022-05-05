@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Insight provides support for numerical operations at two levels. First, Insight uses an external libr...">
+<g id="a_node1"><a xlink:title="ITK provides support for numerical operations at two levels. First, ITK uses an external library call...">
 <polygon fill="#bfbfbf" stroke="black" points="63,-411.99 0,-411.99 0,-392.99 63,-392.99 63,-411.99"/>
 <text text-anchor="middle" x="31.5" y="-399.99" font-family="Helvetica,sans-Serif" font-size="10.00">Numerics</text>
 </a>

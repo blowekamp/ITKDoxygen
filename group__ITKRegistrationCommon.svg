@@ -31,9 +31,8 @@
 <g id="node3" class="node">
 <title>Node9</title>
 <g id="a_node3"><a xlink:href="group__Streamed.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="649.5,-472.97 548.5,-472.97 548.5,-442.97 649.5,-442.97 649.5,-472.97"/>
-<text text-anchor="start" x="556.5" y="-460.97" font-family="Helvetica,sans-Serif" font-size="10.00">Filters supporting</text>
-<text text-anchor="middle" x="599" y="-449.97" font-family="Helvetica,sans-Serif" font-size="10.00"> Streaming</text>
+<polygon fill="white" stroke="black" points="649,-467.47 549,-467.47 549,-448.47 649,-448.47 649,-467.47"/>
+<text text-anchor="middle" x="599" y="-455.47" font-family="Helvetica,sans-Serif" font-size="10.00">Streaming Filters</text>
 </a>
 </g>
 </g>
@@ -107,7 +106,7 @@
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M251.01,-400.6C271.28,-411.25 306,-427.95 338,-435.97 409.62,-453.92 495.45,-457.93 548.35,-458.48"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M251.01,-400.6C271.28,-411.25 306,-427.95 338,-435.97 409.84,-453.97 495.97,-457.95 548.84,-458.48"/>
 <text text-anchor="start" x="351" y="-492.97" font-family="Helvetica,sans-Serif" font-size="10.00">itk::MultiResolutionPyramid</text>
 <text text-anchor="middle" x="423" y="-481.97" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 <text text-anchor="start" x="351" y="-470.97" font-family="Helvetica,sans-Serif" font-size="10.00">itk::RecursiveMultiResolution</text>
@@ -151,7 +150,7 @@
 <!-- Node4 -->
 <g id="node9" class="node">
 <title>Node4</title>
-<g id="a_node9"><a xlink:href="group__RegistrationMetrics.html" target="_top" xlink:title="Similarity metrics are the objects that evaluate how similar two objects are. They are used in regist...">
+<g id="a_node9"><a xlink:href="group__RegistrationMetrics.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="667.5,-39.97 530.5,-39.97 530.5,-9.97 667.5,-9.97 667.5,-39.97"/>
 <text text-anchor="start" x="538.5" y="-27.97" font-family="Helvetica,sans-Serif" font-size="10.00">Similarity Metrics</text>
 <text text-anchor="middle" x="599" y="-16.97" font-family="Helvetica,sans-Serif" font-size="10.00"> of Registration Methods</text>

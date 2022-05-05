@@ -12,7 +12,7 @@
 <!-- Node2 -->
 <g id="node1" class="node">
 <title>Node2</title>
-<g id="a_node1"><a xlink:href="group__RegistrationComponents.html" target="_top" xlink:title="Registration methods are implemented by combining basic components. This framework allows great flexi...">
+<g id="a_node1"><a xlink:href="group__RegistrationComponents.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="153,-30 0,-30 0,0 153,0 153,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Components of Registration</text>
 <text text-anchor="middle" x="76.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> Methods</text>
@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="node3" class="node">
 <title>Node1</title>
-<g id="a_node3"><a xlink:title="Similarity metrics are the objects that evaluate how similar two objects are. They are used in regist...">
+<g id="a_node3"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="327,-30 190,-30 190,0 327,0 327,-30"/>
 <text text-anchor="start" x="198" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Similarity Metrics</text>
 <text text-anchor="middle" x="258.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> of Registration Methods</text>

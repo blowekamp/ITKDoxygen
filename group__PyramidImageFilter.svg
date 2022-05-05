@@ -13,9 +13,8 @@
 <g id="node1" class="node">
 <title>Node4</title>
 <g id="a_node1"><a xlink:href="group__Streamed.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="623,-158.5 522,-158.5 522,-128.5 623,-128.5 623,-158.5"/>
-<text text-anchor="start" x="530" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filters supporting</text>
-<text text-anchor="middle" x="572.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Streaming</text>
+<polygon fill="white" stroke="black" points="622.5,-153 522.5,-153 522.5,-134 622.5,-134 622.5,-153"/>
+<text text-anchor="middle" x="572.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">Streaming Filters</text>
 </a>
 </g>
 </g>
@@ -47,7 +46,7 @@
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M256.88,-86.18C271.89,-96.88 297.84,-113.63 323,-121.5 389.55,-142.31 470.68,-145.65 521.73,-145.26"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M256.88,-86.18C271.89,-96.88 297.84,-113.63 323,-121.5 389.76,-142.37 471.19,-145.67 522.21,-145.25"/>
 <text text-anchor="start" x="323" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::MultiResolutionPyramid</text>
 <text text-anchor="middle" x="395" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 <text text-anchor="start" x="323" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::RecursiveMultiResolution</text>

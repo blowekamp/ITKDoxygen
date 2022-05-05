@@ -22,9 +22,9 @@
 <g id="node2" class="node">
 <title>Node6</title>
 <g id="a_node2"><a xlink:href="group__CannotBeStreamed.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="572,-324.5 467,-324.5 467,-294.5 572,-294.5 572,-324.5"/>
-<text text-anchor="start" x="475" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filters that cannot</text>
-<text text-anchor="middle" x="519.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00"> be streamed</text>
+<polygon fill="white" stroke="black" points="579.5,-324.5 459.5,-324.5 459.5,-294.5 579.5,-294.5 579.5,-324.5"/>
+<text text-anchor="start" x="467.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">Streaming&#45;unfriendly</text>
+<text text-anchor="middle" x="519.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Filters</text>
 </a>
 </g>
 </g>
@@ -70,7 +70,7 @@
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M181.69,-109.01C186.21,-140.68 205.4,-243.11 269,-287.5 284.82,-298.54 398.65,-304.85 466.97,-307.68"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M181.69,-109.01C186.21,-140.68 205.4,-243.11 269,-287.5 284.24,-298.14 390.44,-304.38 459.29,-307.35"/>
 <text text-anchor="start" x="289" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::BSplineDecomposition</text>
 <text text-anchor="middle" x="354" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </g>
