@@ -635,7 +635,7 @@ $(function() {
 , <a class="el" href="classitk_1_1SpatialObjectProperty.html#ace189f1d040108aca8add8b4b4d33e74">itk::SpatialObjectProperty</a>
 , <a class="el" href="classitk_1_1Statistics_1_1ListSample.html#a985d13fe61a834e7397be2412179ce27">itk::Statistics::ListSample&lt; TMeasurementVector &gt;</a>
 , <a class="el" href="classitk_1_1Statistics_1_1Subsample.html#a816d49927ca24a6b9624399dbb06d62c">itk::Statistics::Subsample&lt; TSample &gt;</a>
-, <a class="el" href="classitk_1_1SurfaceSpatialObject.html#a56de87419938461465b51eeb89b66eef">itk::SurfaceSpatialObject&lt; TDimension &gt;</a>
+, <a class="el" href="classitk_1_1SurfaceSpatialObject.html#ae4793da98eacff8c945c8e62364a2eb7">itk::SurfaceSpatialObject&lt; TDimension, TSpatialObjectPointType &gt;</a>
 , <a class="el" href="classitk_1_1TubeSpatialObject.html#a293b82ca33eda950154db99c2219bb9f">itk::TubeSpatialObject&lt; TDimension, TSpatialObjectPointType &gt;</a>
 , <a class="el" href="classitk_1_1watershed_1_1SegmentTable.html#a8fb99ec36082479ccd3b685ef3bf1eb4">itk::watershed::SegmentTable&lt; TScalar &gt;</a>
 , <a class="el" href="classitk_1_1watershed_1_1SegmentTree.html#ae3bf3918f8a3fd00233dd462038aa489">itk::watershed::SegmentTree&lt; TScalar &gt;</a>
@@ -1530,6 +1530,9 @@ $(function() {
 : <a class="el" href="classitk_1_1SimplexMesh.html#aa6652988ff2847375cc5705101e1faf6">itk::SimplexMesh&lt; TPixelType, VDimension, TMeshTraits &gt;</a>
 , <a class="el" href="classitk_1_1TriangleHelper.html#a993c7091bbfba9ec851284b4dfa5b794">itk::TriangleHelper&lt; TPoint &gt;</a>
 </li>
+<li>ComputeNormals()
+: <a class="el" href="classitk_1_1SurfaceSpatialObject.html#accd48eef1d816ea356e10a7a3cffce91">itk::SurfaceSpatialObject&lt; TDimension, TSpatialObjectPointType &gt;</a>
+</li>
 <li>ComputeNumberOfEdges()
 : <a class="el" href="classitk_1_1QuadEdgeMesh.html#a8b384dcb40f5d34273fa10c6d3b830db">itk::QuadEdgeMesh&lt; TPixel, VDimension, TTraits &gt;</a>
 </li>
@@ -1549,7 +1552,7 @@ $(function() {
 , <a class="el" href="classitk_1_1MatrixOffsetTransformBase.html#a9559a2fa680e3c8735746cb29f7f9311">itk::MatrixOffsetTransformBase&lt; TParametersValueType, VInputDimension, VOutputDimension &gt;</a>
 </li>
 <li>ComputeOffsetInner()
-: <a class="el" href="classitk_1_1ImageHelper.html#a6353793b2bd377f22f7441f2eb8568e4">itk::ImageHelper&lt; VImageDimension, VLoop &gt;</a>
+: <a class="el" href="classitk_1_1ImageHelper.html#a3ffe7ae9e557fa21aeb6e87addcfb8a1">itk::ImageHelper&lt; VImageDimension, VLoop &gt;</a>
 </li>
 <li>ComputeOffsetTable()
 : <a class="el" href="classitk_1_1ImageBase.html#ad587ccc7cbe41b123d8501074a1edb9b">itk::ImageBase&lt; VImageDimension &gt;</a>
@@ -1570,7 +1573,7 @@ $(function() {
 : <a class="el" href="classitk_1_1DeformableSimplexMesh3DFilter.html#affbb765ada27a7c207f7171319c6d4b7">itk::DeformableSimplexMesh3DFilter&lt; TInputMesh, TOutputMesh &gt;</a>
 </li>
 <li>ComputeOutputPixel()
-: <a class="el" href="classitk_1_1ComposeImageFilter.html#aff0b6ec1c84defe1e9df176ae6956d30">itk::ComposeImageFilter&lt; TInputImage, TOutputImage &gt;</a>
+: <a class="el" href="classitk_1_1ComposeImageFilter.html#ab54385a02ce82571a29ceb5fc5755cfa">itk::ComposeImageFilter&lt; TInputImage, TOutputImage &gt;</a>
 </li>
 <li>ComputeP()
 : <a class="el" href="classitk_1_1KernelTransform.html#a5230e63d92d75bf04fe5b49a77a07f77">itk::KernelTransform&lt; TParametersValueType, VDimension &gt;</a>
@@ -1784,7 +1787,7 @@ $(function() {
 : <a class="el" href="classitk_1_1ConjugateGradientOptimizer.html#ac2943a2cfea9d8302b307294565b306b">itk::ConjugateGradientOptimizer</a>
 </li>
 <li>ConnectedComponentFunctorImageFilter()
-: <a class="el" href="classitk_1_1ConnectedComponentFunctorImageFilter.html#acc433343ec542a5ffae9beb4e63f65ce">itk::ConnectedComponentFunctorImageFilter&lt; TInputImage, TOutputImage, TFunctor, TMaskImage &gt;</a>
+: <a class="el" href="classitk_1_1ConnectedComponentFunctorImageFilter.html#a1f067309597ccfc18cdeeaf82a458018">itk::ConnectedComponentFunctorImageFilter&lt; TInputImage, TOutputImage, TFunctor, TMaskImage &gt;</a>
 </li>
 <li>ConnectedComponentImageFilter()
 : <a class="el" href="classitk_1_1ConnectedComponentImageFilter.html#aa670b66ded804a53b4d1438728050d8a">itk::ConnectedComponentImageFilter&lt; TInputImage, TOutputImage, TMaskImage &gt;</a>
@@ -1817,13 +1820,13 @@ $(function() {
 , <a class="el" href="structitk_1_1Concept_1_1MultiplyOperator_1_1Constraints.html#a471685ed6110b07273a1c574fdc086ef">itk::Concept::MultiplyOperator&lt; T1, T2, T3 &gt;::Constraints</a>
 </li>
 <li>const_iterator()
-: <a class="el" href="classitk_1_1IndexRange_1_1const__iterator.html#a48f81e6970363a3a736d4ababccfce4b">itk::IndexRange&lt; VDimension, VBeginAtZero &gt;::const_iterator</a>
+: <a class="el" href="classitk_1_1IndexRange_1_1const__iterator.html#aec263f8395a7f84e3a8081e7c158641a">itk::IndexRange&lt; VDimension, VBeginAtZero &gt;::const_iterator</a>
 </li>
 <li>ConstantBoundaryCondition()
 : <a class="el" href="classitk_1_1ConstantBoundaryCondition.html#aa26124d48d28292dd21bdbaadb0be7fd">itk::ConstantBoundaryCondition&lt; TInputImage, TOutputImage &gt;</a>
 </li>
 <li>ConstantBoundaryImageNeighborhoodPixelAccessPolicy()
-: <a class="el" href="classitk_1_1ConstantBoundaryImageNeighborhoodPixelAccessPolicy.html#ae00729a750bc11b521cac5bbb4c49205">itk::ConstantBoundaryImageNeighborhoodPixelAccessPolicy&lt; TImage &gt;</a>
+: <a class="el" href="classitk_1_1ConstantBoundaryImageNeighborhoodPixelAccessPolicy.html#a18e95ebb3a4d314e06ea7974e92a79ee">itk::ConstantBoundaryImageNeighborhoodPixelAccessPolicy&lt; TImage &gt;</a>
 </li>
 <li>ConstantPadImageFilter()
 : <a class="el" href="classitk_1_1ConstantPadImageFilter.html#a6398dd644619235e6ca8085da140cca9">itk::ConstantPadImageFilter&lt; TInputImage, TOutputImage &gt;</a>
@@ -1842,27 +1845,27 @@ $(function() {
 </li>
 <li>ConstIterator()
 : <a class="el" href="structitk_1_1ConstShapedNeighborhoodIterator_1_1ConstIterator.html#a0f3fb67c8d89cd94e795618cea50e56b">itk::ConstShapedNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1LabelMap_1_1ConstIterator.html#af58d05495c8374d186fe026dd354b38d">itk::LabelMap&lt; TLabelObject &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1LevelSetContainerBase_1_1ConstIterator.html#a2feb7fea1b063e520ee4dd86778a8d16">itk::LevelSetContainerBase&lt; TIdentifier, TLevelSet &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1LevelSetEquationContainer_1_1ConstIterator.html#a5fafdf15c326eef0ebbd0b8bff72ce4f">itk::LevelSetEquationContainer&lt; TTermContainer &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1LabelMap_1_1ConstIterator.html#a0b2fbec2fbe7878b8a08e7f9f5fc5528">itk::LabelMap&lt; TLabelObject &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1LevelSetContainerBase_1_1ConstIterator.html#a5f7a8142b49002b96f852ad91ecac6de">itk::LevelSetContainerBase&lt; TIdentifier, TLevelSet &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1LevelSetEquationContainer_1_1ConstIterator.html#ac291aa6996ed6bbd783b19bb4b0ea635">itk::LevelSetEquationContainer&lt; TTermContainer &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1LevelSetEquationTermContainer_1_1ConstIterator.html#ab73e83ab8b2e749726cd767207d9ecad">itk::LevelSetEquationTermContainer&lt; TInputImage, TLevelSetContainer &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1MapContainer_1_1ConstIterator.html#a167a1f4dd05d618596e187aeeeb9f5af">itk::MapContainer&lt; TElementIdentifier, TElement &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1Statistics_1_1Histogram_1_1ConstIterator.html#a886e8571a55f3ae838b9dde2eca4fcbe">itk::Statistics::Histogram&lt; TMeasurement, TFrequencyContainer &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1Statistics_1_1ImageToListSampleAdaptor_1_1ConstIterator.html#a40787a83b15305de2559020b309c1115">itk::Statistics::ImageToListSampleAdaptor&lt; TImage &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1Statistics_1_1ImageToListSampleAdaptor_1_1ConstIterator.html#aa77345f90a3bcc0f694f152c3b095001">itk::Statistics::ImageToListSampleAdaptor&lt; TImage &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1Statistics_1_1ImageToNeighborhoodSampleAdaptor_1_1ConstIterator.html#ad300ac4cdc0b8510e4073beeb04217ed">itk::Statistics::ImageToNeighborhoodSampleAdaptor&lt; TImage, TBoundaryCondition &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1Statistics_1_1JointDomainImageToListSampleAdaptor_1_1ConstIterator.html#a227ad9e73ad91b31469bbcaf5fb3573a">itk::Statistics::JointDomainImageToListSampleAdaptor&lt; TImage &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1Statistics_1_1ListSample_1_1ConstIterator.html#ad1c18b909b6a91a8e67a65a9bd3429cf">itk::Statistics::ListSample&lt; TMeasurementVector &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1Statistics_1_1ListSample_1_1ConstIterator.html#ab42d24201aced6cfcc20b4e78ba2aff1">itk::Statistics::ListSample&lt; TMeasurementVector &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1Statistics_1_1MembershipSample_1_1ConstIterator.html#a19625ccb5c07862f5bb42facc0a86a96">itk::Statistics::MembershipSample&lt; TSample &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1Statistics_1_1PointSetToListSampleAdaptor_1_1ConstIterator.html#a666af8bef27dfc3956068ded09a6be4e">itk::Statistics::PointSetToListSampleAdaptor&lt; TPointSet &gt;::ConstIterator</a>
-, <a class="el" href="classitk_1_1Statistics_1_1Subsample_1_1ConstIterator.html#a8f2431bd38301c72b221b7fc12230351">itk::Statistics::Subsample&lt; TSample &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1Statistics_1_1PointSetToListSampleAdaptor_1_1ConstIterator.html#af092db857b1ba9ae036265641164353e">itk::Statistics::PointSetToListSampleAdaptor&lt; TPointSet &gt;::ConstIterator</a>
+, <a class="el" href="classitk_1_1Statistics_1_1Subsample_1_1ConstIterator.html#ae8eb6d85763893ed5a9c69ab7ae29710">itk::Statistics::Subsample&lt; TSample &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1Statistics_1_1VectorContainerToListSampleAdaptor_1_1ConstIterator.html#a03ea28e2c6871205ad5865cf73ef860f">itk::Statistics::VectorContainerToListSampleAdaptor&lt; TVectorContainer &gt;::ConstIterator</a>
 , <a class="el" href="classitk_1_1VectorContainer_1_1ConstIterator.html#af46f616fb7f96d4a8876438e007907e0">itk::VectorContainer&lt; TElementIdentifier, TElement &gt;::ConstIterator</a>
 </li>
 <li>ConstLineIterator()
-: <a class="el" href="classitk_1_1LabelObject_1_1ConstLineIterator.html#a22daf57999f17051f68a6c07272e71e6">itk::LabelObject&lt; TLabel, VImageDimension &gt;::ConstLineIterator</a>
+: <a class="el" href="classitk_1_1LabelObject_1_1ConstLineIterator.html#a7cdbe2d820885691353f2c3541871e72">itk::LabelObject&lt; TLabel, VImageDimension &gt;::ConstLineIterator</a>
 </li>
 <li>ConstNeighborhoodIterator()
-: <a class="el" href="classitk_1_1ConstNeighborhoodIterator.html#a816ba95eadbd490465b0c2a0fda34040">itk::ConstNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;</a>
+: <a class="el" href="classitk_1_1ConstNeighborhoodIterator.html#a714fa3fb399df1895cd3e19e0b1653d6">itk::ConstNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;</a>
 </li>
 <li>ConstNeighborhoodIteratorWithOnlyIndex()
 : <a class="el" href="classitk_1_1ConstNeighborhoodIteratorWithOnlyIndex.html#a0355fc8d5c67323f4e6aa633b9b6dabc">itk::ConstNeighborhoodIteratorWithOnlyIndex&lt; TImage &gt;</a>
@@ -1919,7 +1922,7 @@ $(function() {
 , <a class="el" href="structitk_1_1Concept_1_1Signed_1_1Constraints.html#a591ea913a12d5b51977a7f267719ce43">itk::Concept::Signed&lt; T &gt;::Constraints</a>
 </li>
 <li>ConstReverseIterator()
-: <a class="el" href="classitk_1_1FixedArray_1_1ConstReverseIterator.html#a1d9da8f84e541e3ddf2c8a04764fa510">itk::FixedArray&lt; TValue, VLength &gt;::ConstReverseIterator</a>
+: <a class="el" href="classitk_1_1FixedArray_1_1ConstReverseIterator.html#a94fece45f68e903fd3ec0e356af817fd">itk::FixedArray&lt; TValue, VLength &gt;::ConstReverseIterator</a>
 </li>
 <li>ConstructActiveLayer()
 : <a class="el" href="classitk_1_1ParallelSparseFieldLevelSetImageFilter.html#ace1cfc77588928f3b88dd9aa0947bf53">itk::ParallelSparseFieldLevelSetImageFilter&lt; TInputImage, TOutputImage &gt;</a>
@@ -1939,13 +1942,13 @@ $(function() {
 , <a class="el" href="classitk_1_1SparseFieldLevelSetImageFilter.html#a623b18baf09a924352b68bf7ca8a90ea">itk::SparseFieldLevelSetImageFilter&lt; TInputImage, TOutputImage &gt;</a>
 </li>
 <li>ConstShapedNeighborhoodIterator()
-: <a class="el" href="classitk_1_1ConstShapedNeighborhoodIterator.html#a58c02cbcac1a7651477315bc84489478">itk::ConstShapedNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;</a>
+: <a class="el" href="classitk_1_1ConstShapedNeighborhoodIterator.html#a9c318200a0fe1b18ca9024f31a62a104">itk::ConstShapedNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;</a>
 </li>
 <li>ConstSliceIterator()
 : <a class="el" href="classitk_1_1ConstSliceIterator.html#afce3f5beb8146618cc7015dba54e9784">itk::ConstSliceIterator&lt; TPixel, TContainer &gt;</a>
 </li>
 <li>ConstSparseFieldLayerIterator()
-: <a class="el" href="classitk_1_1ConstSparseFieldLayerIterator.html#a9677188f14164bfc5d24a1e4683d2638">itk::ConstSparseFieldLayerIterator&lt; TNodeType &gt;</a>
+: <a class="el" href="classitk_1_1ConstSparseFieldLayerIterator.html#adef88345704c3290739281e980a84ab9">itk::ConstSparseFieldLayerIterator&lt; TNodeType &gt;</a>
 </li>
 <li>ContainerManageMemoryOn()
 : <a class="el" href="classitk_1_1ImportImageContainer.html#af12c161c2d4f29b3639b481a9742d983">itk::ImportImageContainer&lt; TElementIdentifier, TElement &gt;</a>
@@ -1955,7 +1958,7 @@ $(function() {
 , <a class="el" href="classitk_1_1StringTools.html#a2eb3770cfba0d6331bfd9297e34c97a9">itk::StringTools</a>
 </li>
 <li>ContinuousIndex()
-: <a class="el" href="classitk_1_1ContinuousIndex.html#a013f39ab95b34fa307e2cabaf57aed4a">itk::ContinuousIndex&lt; TCoordRep, VIndexDimension &gt;</a>
+: <a class="el" href="classitk_1_1ContinuousIndex.html#a3511f6c3313d602d9a4d32ef33d57033">itk::ContinuousIndex&lt; TCoordRep, VIndexDimension &gt;</a>
 </li>
 <li>ContourDirectedMeanDistanceImageFilter()
 : <a class="el" href="classitk_1_1ContourDirectedMeanDistanceImageFilter.html#a5eda11e5da88f4c0174c143e61bc63f1">itk::ContourDirectedMeanDistanceImageFilter&lt; TInputImage1, TInputImage2 &gt;</a>
@@ -1979,7 +1982,7 @@ $(function() {
 : <a class="el" href="classitk_1_1ConvertPixelBuffer.html#ab18a16ed6dc3d7958646310b6bd8f2f9">itk::ConvertPixelBuffer&lt; InputPixelType, OutputPixelType, OutputConvertTraits &gt;</a>
 , <a class="el" href="classitk_1_1ConvertPixelBuffer_3_01InputPixelType_00_01Array_3_01T_01_4_00_01OutputConvertTraits_01_4.html#afa0d0f5ef26ff334b74b25f3ac2ebd5b">itk::ConvertPixelBuffer&lt; InputPixelType, Array&lt; T &gt;, OutputConvertTraits &gt;</a>
 , <a class="el" href="classitk_1_1ConvertPixelBuffer_3_01InputPixelType_00_01VariableLengthVector_3_01T_01_4_00_01OutputConvertTraits_01_4.html#ab78a3a443d7e3aceb113029b8dacc920">itk::ConvertPixelBuffer&lt; InputPixelType, VariableLengthVector&lt; T &gt;, OutputConvertTraits &gt;</a>
-, <a class="el" href="classitk_1_1ImageIORegionAdaptor.html#a5d972ce960f6ae5f58b3f3ff09b105b4">itk::ImageIORegionAdaptor&lt; VDimension &gt;</a>
+, <a class="el" href="classitk_1_1ImageIORegionAdaptor.html#a764d80b5cf0f982438eb4a5f330eaef7">itk::ImageIORegionAdaptor&lt; VDimension &gt;</a>
 </li>
 <li>ConvertBuffer()
 : <a class="el" href="classitk_1_1GiftiMeshIO.html#a2705f932081dd583cb44788242db8626">itk::GiftiMeshIO</a>
@@ -2034,7 +2037,7 @@ $(function() {
 <li>ConvertPixelBuffer()
 : <a class="el" href="classitk_1_1ConvertPixelBuffer.html#ad3c8121c0a0db1fbcde16b490938ab70">itk::ConvertPixelBuffer&lt; InputPixelType, OutputPixelType, OutputConvertTraits &gt;</a>
 , <a class="el" href="classitk_1_1ConvertPixelBuffer_3_01InputPixelType_00_01Array_3_01T_01_4_00_01OutputConvertTraits_01_4.html#a418bc140221202a325c21ef4bf2e67da">itk::ConvertPixelBuffer&lt; InputPixelType, Array&lt; T &gt;, OutputConvertTraits &gt;</a>
-, <a class="el" href="classitk_1_1ConvertPixelBuffer_3_01InputPixelType_00_01VariableLengthVector_3_01T_01_4_00_01OutputConvertTraits_01_4.html#a3f068859d5be3a818f1155a4eeb25801">itk::ConvertPixelBuffer&lt; InputPixelType, VariableLengthVector&lt; T &gt;, OutputConvertTraits &gt;</a>
+, <a class="el" href="classitk_1_1ConvertPixelBuffer_3_01InputPixelType_00_01VariableLengthVector_3_01T_01_4_00_01OutputConvertTraits_01_4.html#a7395f726e45b0322f2e208cfdf824caf">itk::ConvertPixelBuffer&lt; InputPixelType, VariableLengthVector&lt; T &gt;, OutputConvertTraits &gt;</a>
 </li>
 <li>ConvertPointPixelBuffer()
 : <a class="el" href="classitk_1_1MeshFileReader.html#a5b5b8f7d570d19ad8df4a4593d95c804">itk::MeshFileReader&lt; TOutputMesh, ConvertPointPixelTraits, ConvertCellPixelTraits &gt;</a>
@@ -2238,7 +2241,7 @@ $(function() {
 : <a class="el" href="classitk_1_1BSplineResampleImageFilterBase.html#ad832b9a88478786cb2f943344a84bad2">itk::BSplineResampleImageFilterBase&lt; TInputImage, TOutputImage &gt;</a>
 </li>
 <li>CopyParameters()
-: <a class="el" href="classitk_1_1Statistics_1_1KdTreeBasedKmeansEstimator.html#a1e97317a40154e0b39983e0641b750b5">itk::Statistics::KdTreeBasedKmeansEstimator&lt; TKdTree &gt;</a>
+: <a class="el" href="classitk_1_1Statistics_1_1KdTreeBasedKmeansEstimator.html#a854c8946c3d8b1b018c568c5d7af86a8">itk::Statistics::KdTreeBasedKmeansEstimator&lt; TKdTree &gt;</a>
 </li>
 <li>CopyPointDataToBuffer()
 : <a class="el" href="classitk_1_1MeshFileWriter.html#a62939fb8a09e9976ee8c84c23c9608e9">itk::MeshFileWriter&lt; TInputMesh &gt;</a>
@@ -2309,7 +2312,7 @@ $(function() {
 : <a class="el" href="classitk_1_1Statistics_1_1CovarianceSampleFilter.html#a7273290847619fb4d83059caec1dc306">itk::Statistics::CovarianceSampleFilter&lt; TSample &gt;</a>
 </li>
 <li>CovariantVector()
-: <a class="el" href="classitk_1_1CovariantVector.html#a4865879ccb6de0415c2752397282545b">itk::CovariantVector&lt; T, VVectorDimension &gt;</a>
+: <a class="el" href="classitk_1_1CovariantVector.html#a3a45752e7eae081362d38790072c67d6">itk::CovariantVector&lt; T, VVectorDimension &gt;</a>
 </li>
 <li>CoxDeBoor()
 : <a class="el" href="classitk_1_1CoxDeBoorBSplineKernelFunction.html#a578ed04a481b7fa72c1f531d9d8ea439">itk::CoxDeBoorBSplineKernelFunction&lt; VSplineOrder, TRealValueType &gt;</a>
@@ -2447,7 +2450,7 @@ $(function() {
 , <a class="el" href="classitk_1_1LaplacianOperator.html#a8fa657625ec25f8a7a2ffa5669defb01">itk::LaplacianOperator&lt; TPixel, VDimension, TAllocator &gt;</a>
 </li>
 <li>CreatePixelAccessPolicy()
-: <a class="el" href="classitk_1_1ShapedImageNeighborhoodRange_1_1QualifiedIterator.html#ae8b5bf08dd1c3296ce929031e6e9b3ef">itk::ShapedImageNeighborhoodRange&lt; TImage, TImageNeighborhoodPixelAccessPolicy &gt;::QualifiedIterator&lt; VIsConst &gt;</a>
+: <a class="el" href="classitk_1_1ShapedImageNeighborhoodRange_1_1QualifiedIterator.html#a9ba3d587968fdf8fc12289e1a8a6bfe9">itk::ShapedImageNeighborhoodRange&lt; TImage, TImageNeighborhoodPixelAccessPolicy &gt;::QualifiedIterator&lt; VIsConst &gt;</a>
 </li>
 <li>CreateRanges()
 : <a class="el" href="classitk_1_1PointSetToPointSetMetricWithIndexv4.html#a09ccb4724e406d7ece88fb8ea88d0df0">itk::PointSetToPointSetMetricWithIndexv4&lt; TFixedPointSet, TMovingPointSet, TInternalComputationValueType &gt;</a>
@@ -2472,7 +2475,7 @@ $(function() {
 : <a class="el" href="classitk_1_1LoggerManager.html#a276dc82d2cfd08f3d021116d50affb1f">itk::LoggerManager</a>
 </li>
 <li>CreateToRadius()
-: <a class="el" href="classitk_1_1NeighborhoodOperator.html#ae6a04afb708654508d1ebf30234fdbb6">itk::NeighborhoodOperator&lt; TPixel, VDimension, TAllocator &gt;</a>
+: <a class="el" href="classitk_1_1NeighborhoodOperator.html#a9e3d56778dace21c4113c3a2574c1b04">itk::NeighborhoodOperator&lt; TPixel, VDimension, TAllocator &gt;</a>
 </li>
 <li>CreateTransform()
 : <a class="el" href="classitk_1_1TransformIOBaseTemplate.html#a916151c98fb79610bb4238d223a5e7d1">itk::TransformIOBaseTemplate&lt; TParametersValueType &gt;</a>
