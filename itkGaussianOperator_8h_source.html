@@ -159,54 +159,84 @@ $(function() {
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;MaximumKernelWidth: &quot;</span> &lt;&lt; m_MaximumKernelWidth &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  ModifiedBesselI0(<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  ModifiedBesselI1(<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  ModifiedBesselI(<span class="keywordtype">int</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a32112df2d20bcb968781d42bc02bb91e">  150</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#a32112df2d20bcb968781d42bc02bb91e">GetDebug</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> m_Debug;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#ad361ef46cf6b8e47b6dd6e3e6253796b">  157</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#ad361ef46cf6b8e47b6dd6e3e6253796b">DebugOn</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    m_Debug = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> Superclass::CoefficientVector;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  CoefficientVector</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  GenerateCoefficients() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">  172</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">Fill</a>(<span class="keyword">const</span> <a class="code" href="classitk_1_1GaussianOperator.html#ab43ef8e6bf0e8492b6f8730fe2f7f2d1">CoefficientVector</a> &amp; coeff)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    this-&gt;FillCenteredDirectional(coeff);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a9940eb008be0a8d888f1f2640c9848e4">  179</a></span>&#160;  <span class="keywordtype">double</span> m_Variance{ 1 };</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#af5b5a097284d356504be15f74970f5d7">  183</a></span>&#160;  <span class="keywordtype">double</span> m_MaximumError{ .01 };</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#ac8f1459bdc1e1709f68d2e2b27103472">  188</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_MaximumKernelWidth{ 30 };</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;} <span class="comment">// namespace itk</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#ae5a98980dfb247d530ce110f9112e148">  164</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#ae5a98980dfb247d530ce110f9112e148">DebugOff</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    m_Debug = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a6b3b75ac96dc92310fc215ac3ad42507">  171</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#a6b3b75ac96dc92310fc215ac3ad42507">SetDebug</a>(<span class="keywordtype">bool</span> debugFlag)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    m_Debug = debugFlag;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  ModifiedBesselI0(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  ModifiedBesselI1(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  ModifiedBesselI(<span class="keywordtype">int</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#ifndef ITK_MANUAL_INSTANTIATION</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#  include &quot;itkGaussianOperator.hxx&quot;</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> Superclass::CoefficientVector;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  CoefficientVector</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  GenerateCoefficients() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">  202</a></span>&#160;  <a class="code" href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">Fill</a>(<span class="keyword">const</span> <a class="code" href="classitk_1_1GaussianOperator.html#ab43ef8e6bf0e8492b6f8730fe2f7f2d1">CoefficientVector</a> &amp; coeff)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    this-&gt;FillCenteredDirectional(coeff);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a9940eb008be0a8d888f1f2640c9848e4">  209</a></span>&#160;  <span class="keywordtype">double</span> m_Variance{ 1 };</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#af5b5a097284d356504be15f74970f5d7">  213</a></span>&#160;  <span class="keywordtype">double</span> m_MaximumError{ .01 };</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#ac8f1459bdc1e1709f68d2e2b27103472">  218</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_MaximumKernelWidth{ 30 };</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classitk_1_1GaussianOperator.html#a4e0ae8f4986399ca94ad9750ae2554cf">  221</a></span>&#160;  <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_Debug{ <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;};</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;} <span class="comment">// namespace itk</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#ifndef ITK_MANUAL_INSTANTIATION</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#  include &quot;itkGaussianOperator.hxx&quot;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassitk_1_1GaussianOperator_html_a32112df2d20bcb968781d42bc02bb91e"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a32112df2d20bcb968781d42bc02bb91e">itk::GaussianOperator::GetDebug</a></div><div class="ttdeci">bool GetDebug() const</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00150">itkGaussianOperator.h:150</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_a644193492c324136822c5c5fa67216df"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a644193492c324136822c5c5fa67216df">itk::GaussianOperator::GetMaximumKernelWidth</a></div><div class="ttdeci">unsigned int GetMaximumKernelWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00131">itkGaussianOperator.h:131</a></div></div>
 <div class="ttc" id="aclassitk_1_1NeighborhoodOperator_html"><div class="ttname"><a href="classitk_1_1NeighborhoodOperator.html">itk::NeighborhoodOperator</a></div><div class="ttdoc">Virtual class that defines a common interface to all neighborhood operator subtypes.</div><div class="ttdef"><b>Definition:</b> <a href="itkNeighborhoodOperator_8h_source.html#l00072">itkNeighborhoodOperator.h:72</a></div></div>
 <div class="ttc" id="aitkNeighborhoodOperator_8h_html"><div class="ttname"><a href="itkNeighborhoodOperator_8h.html">itkNeighborhoodOperator.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1Indent_html"><div class="ttname"><a href="classitk_1_1Indent.html">itk::Indent</a></div><div class="ttdoc">Control indentation during Print() invocation.</div><div class="ttdef"><b>Definition:</b> <a href="itkIndent_8h_source.html#l00049">itkIndent.h:49</a></div></div>
+<div class="ttc" id="aclassitk_1_1GaussianOperator_html_ae5a98980dfb247d530ce110f9112e148"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#ae5a98980dfb247d530ce110f9112e148">itk::GaussianOperator::DebugOff</a></div><div class="ttdeci">void DebugOff() const</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00164">itkGaussianOperator.h:164</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_a5a7db857cb07a22188d2c5a9a69e6d38"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a5a7db857cb07a22188d2c5a9a69e6d38">itk::GaussianOperator::PrintSelf</a></div><div class="ttdeci">void PrintSelf(std::ostream &amp;os, Indent indent) const override</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00137">itkGaussianOperator.h:137</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_af36fbb90dc7d033d312dcf6b0c0078e8"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#af36fbb90dc7d033d312dcf6b0c0078e8">itk::GaussianOperator::GetVariance</a></div><div class="ttdeci">double GetVariance()</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00104">itkGaussianOperator.h:104</a></div></div>
+<div class="ttc" id="aclassitk_1_1GaussianOperator_html_a6b3b75ac96dc92310fc215ac3ad42507"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a6b3b75ac96dc92310fc215ac3ad42507">itk::GaussianOperator::SetDebug</a></div><div class="ttdeci">void SetDebug(bool debugFlag) const</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00171">itkGaussianOperator.h:171</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_a1256ac7db1bc3bae21dd0bb3d1a5b272"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a1256ac7db1bc3bae21dd0bb3d1a5b272">itk::GaussianOperator::SetMaximumError</a></div><div class="ttdeci">void SetMaximumError(const double &amp;max_error)</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00092">itkGaussianOperator.h:92</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html"><div class="ttname"><a href="classitk_1_1GaussianOperator.html">itk::GaussianOperator</a></div><div class="ttdoc">A NeighborhoodOperator whose coefficients are a one dimensional, discrete Gaussian kernel.</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00069">itkGaussianOperator.h:69</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div><div class="ttdoc">The &quot;itk&quot; namespace contains all Insight Segmentation and Registration Toolkit (ITK) classes....</div><div class="ttdef"><b>Definition:</b> <a href="itkAnnulusOperator_8h_source.html#l00024">itkAnnulusOperator.h:24</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_a8550d29cd8f06e1ed6bf3551a715cf3a"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a8550d29cd8f06e1ed6bf3551a715cf3a">itk::GaussianOperator::GetMaximumError</a></div><div class="ttdeci">double GetMaximumError()</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00114">itkGaussianOperator.h:114</a></div></div>
-<div class="ttc" id="aclassitk_1_1GaussianOperator_html_a29046c38d8e6ecbd3b32de3b40b524db"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">itk::GaussianOperator::Fill</a></div><div class="ttdeci">void Fill(const CoefficientVector &amp;coeff) override</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00172">itkGaussianOperator.h:172</a></div></div>
+<div class="ttc" id="aclassitk_1_1GaussianOperator_html_a29046c38d8e6ecbd3b32de3b40b524db"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a29046c38d8e6ecbd3b32de3b40b524db">itk::GaussianOperator::Fill</a></div><div class="ttdeci">void Fill(const CoefficientVector &amp;coeff) override</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00202">itkGaussianOperator.h:202</a></div></div>
+<div class="ttc" id="aclassitk_1_1GaussianOperator_html_ad361ef46cf6b8e47b6dd6e3e6253796b"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#ad361ef46cf6b8e47b6dd6e3e6253796b">itk::GaussianOperator::DebugOn</a></div><div class="ttdeci">void DebugOn() const</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00157">itkGaussianOperator.h:157</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_ab43ef8e6bf0e8492b6f8730fe2f7f2d1"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#ab43ef8e6bf0e8492b6f8730fe2f7f2d1">itk::GaussianOperator&lt; ScalarType, Superclass::Dimension &gt;::CoefficientVector</a></div><div class="ttdeci">typename std::vector&lt; PixelRealType &gt; CoefficientVector</div><div class="ttdef"><b>Definition:</b> <a href="itkNeighborhoodOperator_8h_source.html#l00147">itkNeighborhoodOperator.h:147</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_a1e9799dd59a77abcd3e40efe719d07bd"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#a1e9799dd59a77abcd3e40efe719d07bd">itk::GaussianOperator::SetMaximumKernelWidth</a></div><div class="ttdeci">void SetMaximumKernelWidth(unsigned int n)</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00124">itkGaussianOperator.h:124</a></div></div>
 <div class="ttc" id="aclassitk_1_1GaussianOperator_html_aa0d90f8697b1d615947672b6cbb18839"><div class="ttname"><a href="classitk_1_1GaussianOperator.html#aa0d90f8697b1d615947672b6cbb18839">itk::GaussianOperator::SetVariance</a></div><div class="ttdeci">void SetVariance(const double &amp;variance)</div><div class="ttdef"><b>Definition:</b> <a href="itkGaussianOperator_8h_source.html#l00082">itkGaussianOperator.h:82</a></div></div>
