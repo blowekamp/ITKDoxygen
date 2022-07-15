@@ -196,7 +196,7 @@ $(function() {
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span> (m_Process)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      std::lock_guard&lt;std::mutex&gt; outputSerializer(m_ProgressOutput);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      m_Steps++;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      ++m_Steps;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">if</span> (!m_Quiet)</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      {</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; | &quot;</span> &lt;&lt; m_Process-&gt;GetProgress() &lt;&lt; std::flush;</div>
@@ -233,7 +233,7 @@ $(function() {
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classitk_1_1SimpleFilterWatcher.html#af3248b3bb4c16b5398f52171fa993d9b">  238</a></span>&#160;  <a class="code" href="classitk_1_1SimpleFilterWatcher.html#af3248b3bb4c16b5398f52171fa993d9b">ShowIteration</a>()</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  {</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; #&quot;</span> &lt;&lt; std::flush;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    m_Iterations++;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    ++m_Iterations;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>

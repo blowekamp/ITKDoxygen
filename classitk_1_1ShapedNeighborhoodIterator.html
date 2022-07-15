@@ -320,11 +320,11 @@ class itk::ShapedNeighborhoodIterator&lt; TImage, TBoundaryCondition &gt;</h3>
 <div class="line"><span class="comment">// you may also use i != i.End(), but IsAtEnd() may be slightly faster.</span></div>
 </div><!-- fragment --><p>You can also iterate backward through the neighborhood active list.</p>
 <div class="fragment"><div class="line">i = it.End();</div>
-<div class="line">i--;</div>
+<div class="line">--i;</div>
 <div class="line"><span class="keywordflow">while</span> (i != it.Begin())</div>
 <div class="line">{</div>
 <div class="line">  i.Set(i.Get() + 1.0);</div>
-<div class="line">  i--;</div>
+<div class="line">  --i;</div>
 <div class="line">}</div>
 <div class="line"> i.Set(i.Get() + 1.0);</div>
 </div><!-- fragment --><p>The Get() Set() syntax was chosen versus defining operator* for these iterators because lvalue vs. rvalue context information is needed to determine whether bounds checking must take place.</p>

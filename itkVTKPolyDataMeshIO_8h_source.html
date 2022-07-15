@@ -200,27 +200,27 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">switch</span> (cellType)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aaa2a98cf7c6260eeb2341e964638b377a">CellGeometryEnum::VERTEX_CELL</a>:</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          numberOfVertices++;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          ++numberOfVertices;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          numberOfVertexIndices += nn + 1;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aaf1e164d965e5a230a526bf8dca39df93">CellGeometryEnum::LINE_CELL</a>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          numberOfLines++;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          ++numberOfLines;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          numberOfLineIndices += nn + 1;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aa834770077be63ce68387550caee22b77">CellGeometryEnum::POLYLINE_CELL</a>:</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          numberOfLines++;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          ++numberOfLines;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          numberOfLineIndices += nn + 1;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aa6129d35d4272521d766d629ce058a97b">CellGeometryEnum::TRIANGLE_CELL</a>:</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          numberOfPolygons++;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          ++numberOfPolygons;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          numberOfPolygonIndices += nn + 1;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aa530748a37aa04e51c6645eea9b376078">CellGeometryEnum::POLYGON_CELL</a>:</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          numberOfPolygons++;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          ++numberOfPolygons;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          numberOfPolygonIndices += nn + 1;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="classitk_1_1CommonEnums.html#a689d3fe0822471806a38161a1709399aa4fe2502950d9f664c78e593358907ed0">CellGeometryEnum::QUADRILATERAL_CELL</a>:</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          numberOfPolygons++;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          ++numberOfPolygons;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          numberOfPolygonIndices += nn + 1;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -1155,7 +1155,7 @@ $(function() {
 <div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;    {</div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="classitk_1_1MeshIOBase.html#a425c59fa10e207170eaa943a019a7db7">SizeValueType</a> ii = 0; ii &lt; this-&gt;m_NumberOfCells; ++ii)</div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;      {</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        inputIndex++;</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        ++inputIndex;</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;        <span class="keyword">auto</span> nn = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(input[inputIndex++]);</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;        output[outputIndex++] = nn;</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> jj = 0; jj &lt; nn; ++jj)</div>
