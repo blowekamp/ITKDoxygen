@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classitk_1_1SpatialObjectPoint.html" target="_top" xlink:title="Point used for spatial objets.">
+<g id="a_node3"><a xlink:href="classitk_1_1SpatialObjectPoint.html" target="_top" xlink:title="Point used for spatial objects.">
 <polygon fill="white" stroke="black" points="25.5,-123.5 25.5,-153.5 150.5,-153.5 150.5,-123.5 25.5,-123.5"/>
 <text text-anchor="start" x="33.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::SpatialObjectPoint</text>
 <text text-anchor="middle" x="88" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TPointDimension &gt;</text>

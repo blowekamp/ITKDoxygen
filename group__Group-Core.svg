@@ -21,7 +21,7 @@
 <!-- Node5 -->
 <g id="node2" class="node">
 <title>Node5</title>
-<g id="a_node2"><a xlink:href="group__ITKGPUFiniteDifference.html" target="_top" xlink:title="This module contains the GPU implementations of base classes neede for finite difference image filter...">
+<g id="a_node2"><a xlink:href="group__ITKGPUFiniteDifference.html" target="_top" xlink:title="This module contains the GPU implementations of base classes needed for finite difference image filte...">
 <polygon fill="white" stroke="black" points="277,-352 107,-352 107,-333 277,-333 277,-352"/>
 <text text-anchor="middle" x="192" y="-340" font-family="Helvetica,sans-Serif" font-size="10.00">Module ITKGPUFiniteDifference</text>
 </a>
