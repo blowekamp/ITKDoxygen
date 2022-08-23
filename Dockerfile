@@ -10,7 +10,7 @@ RUN apt-get update && \
   git \
   ninja-build \
   graphviz \
-  python \
+  python3 \
   && apt-get clean
 
 RUN git clone https://github.com/doxygen/doxygen.git && \
