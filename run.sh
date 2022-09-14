@@ -27,6 +27,11 @@ mkdir -p ${BLD_DIR} && \
           -DITK_DOXYGEN_XML:BOOL=ON\
           -DITK_DOXYGEN_SERVER_BASED_SEARCH:BOOL=OFF\
           -DBUILD_TESTING:BOOL=OFF \
+          -DModule_ITKReview:BOOL=ON \
+          -DModule_SimpleITKFilters=ON \
+          -DModule_MGHIO:BOOL=ON \
+          -DModule_GenericLabelInterpolator:BOOL=ON \
+          -DModule_AdaptiveDenoising:BOOL=ON \
           ${SRC_DIR} && \
     cmake --build . --target Documentation && \
     cd ${BLD_DIR}/Utilities/Doxygen && \
