@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Build Docker Image for Doxygen
@@ -25,7 +25,7 @@ jobs:
           docker cp itk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
           docker cp itk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
       - name: Archive Doxygen Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: doxygen
           path: |
