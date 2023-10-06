@@ -1,13 +1,16 @@
 ITKDoxygen
 ==========
 
-[![][doxygen-img]][doxygen-link] [![][deployment-img]][deployment-link]
+[![][doxygen-img]][doxygen-link] [![][deployment-img]][deployment-link] [![][build-docker-img]][build-docker-link]
 
 [doxygen-img]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/Doxygen.yml/badge.svg
 [doxygen-link]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/Doxygen.yml
 
 [deployment-img]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/pages/pages-build-deployment/badge.svg
 [deployment-link]: https://insightsoftwareconsortium.github.io/ITKDoxygen/
+
+[build-docker-img]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/build-docker-image.yml/badge.svg
+[build-docker-link]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/build-docker-image.yml
 
 Overview
 --------
