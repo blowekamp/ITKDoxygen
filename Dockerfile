@@ -13,6 +13,8 @@ RUN apt-get update && \
   python3 \
   && apt-get clean
 
+RUN ln /usr/bin/dot /usr/sbin/dot
+
 RUN git clone https://github.com/doxygen/doxygen.git && \
     ( cd doxygen && \
       git checkout Release_1_9_3 && \
