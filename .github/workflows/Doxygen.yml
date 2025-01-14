@@ -2,7 +2,7 @@ name: doxygen
 
 on:
   push:
-    branches: master
+    branches: main
   schedule:
     - cron: '0 0 * * *'
 
@@ -32,7 +32,7 @@ jobs:
             artifacts/ITKDoxygenXML-*.tar.gz
             artifacts/ITKDoxygen-*.tar.gz
       - name: Update gh-pages
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: |
           tar -zxf artifacts/ITKDoxygen-*.tar.gz
           touch html/.nojekyll
