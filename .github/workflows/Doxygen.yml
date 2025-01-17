@@ -8,7 +8,6 @@ on:
 
 jobs:
   doxygen:
-
     runs-on: ubuntu-24.04
 
     steps:
@@ -59,17 +58,40 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.github_token }}
 
-      - name: Update gh-pages
+      - name: Prepare HTML for GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
           tar -zxf artifacts/ITKDoxygen-*.tar.gz
           touch html/.nojekyll
-          git update-ref refs/heads/${TARGET_BRANCH} origin/${TARGET_BRANCH}
-          ./update-gh-pages.sh html
-          repo_uri="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git push $repo_uri ${TARGET_BRANCH}
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
-          TARGET_BRANCH: 'gh-pages'
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: html
+          retention-days: 7
+
+  deploy-gh-pages:
+    needs: doxygen
+    runs-on: ubuntu-24.04
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      contents: read
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      id: deployment
+      uses: actions/deploy-pages@v4
+      # with:
+        # preview: true <-> currently not available to the public
 
 
