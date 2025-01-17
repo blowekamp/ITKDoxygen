@@ -54,8 +54,8 @@ jobs:
 
           popd
 
-          gh release delete -R thewtex/ITKDoxygen --cleanup-tag latest --yes
-          gh release create latest --notes="ITK Doxygen documentation built from the ITK master branch." --prerelease --title "ITKDoxygen Latest" -R thewtex/ITKDoxygen ./artifacts/InsightDoxygen*
+          gh release delete -R InsightSoftwareConsortium/ITKDoxygen --cleanup-tag latest --yes
+          gh release create latest --notes="ITK Doxygen documentation built from the ITK master branch." --prerelease --title "ITKDoxygen Latest" -R InsightSoftwareConsortium/ITKDoxygen ./artifacts/InsightDoxygen*
         env:
           GH_TOKEN: ${{ secrets.github_token }}
 
