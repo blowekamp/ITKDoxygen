@@ -9,21 +9,24 @@ on:
 jobs:
   doxygen:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Build Docker Image for Doxygen
         run: |
           docker build -f Dockerfile -t itk-doxygen .
+
       - name: Docker Doxygen generation
         run: |
           docker run --name itk-dox itk-doxygen
           mkdir -p artifacts
           docker cp itk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
           docker cp itk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
+
       - name: Archive Doxygen Artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -31,6 +34,31 @@ jobs:
           path: |
             artifacts/ITKDoxygenXML-*.tar.gz
             artifacts/ITKDoxygen-*.tar.gz
+
+      - name: Publish to latest GitHub Release
+        if: github.ref == 'refs/heads/main'
+        run: |
+          sudo apt install -y zstd
+
+          pushd artifacts
+
+          cp ITKDoxygen-*.tar.gz InsightDoxygenDocHtml-latest.tar.gz
+          gunzip InsightDoxygenDocHtml-latest.tar.gz
+          zstd -f -10 -T6 --long=31 InsightDoxygenDocHtml-latest.tar -o InsightDoxygenDocHtml-latest.tar.zst
+          gzip -9 InsightDoxygenDocHtml-latest.tar
+
+          cp ITKDoxygenXML-*.tar.gz InsightDoxygenDocXml-latest.tar.gz
+          gunzip InsightDoxygenDocXml-latest.tar.gz
+          zstd -f -10 -T6 --long=31 InsightDoxygenDocXml-latest.tar -o InsightDoxygenDocXml-latest.tar.zst
+          gzip -9 InsightDoxygenDocXml-latest.tar
+
+          popd
+
+          gh release delete -R InsightSoftwareConsortium/ITKDoxygen --cleanup-tag latest --yes
+          gh release create latest --notes="ITK Doxygen documentation built from the ITK master branch." --prerelease --title "ITKDoxygen Latest" -R InsightSoftwareConsortium/ITKDoxygen ./artifacts/InsightDoxygen*
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}
+
       - name: Update gh-pages
         if: github.ref == 'refs/heads/main'
         run: |

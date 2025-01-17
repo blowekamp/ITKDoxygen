@@ -1,0 +1,22 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the OS, Python version, and other tools you might need
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "mambaforge-23.11"
+
+  commands:
+    # Write down your commands here to:
+    #
+    #  - Install the dependencies of your project
+    #  - Build the documentation
+    #  - Save the generated files in $READTHEDOCS_OUTPUT/html
+    - mamba remove --force --name rtd --all
+    - mamba env create -f rtd-environment.yml
+    - mamba run -n rtd zstd --version
+    - ./rtd-download.sh

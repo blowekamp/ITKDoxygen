@@ -66,8 +66,8 @@ docker run \
 The following commands will copy the tarballs from the
 Docker container to your local working directory.
 ```shell
-docker cp itk-dox:/ITKDoxygen.tar.gz SimpleITKDoxygen${TAG:+-${TAG}}.tar.gz
-docker cp itk-dox:/ITKDoxygenXML.tar.gz SimpleITKDoxygenXML${TAG:+-${TAG}}.tar.gz
+docker cp itk-dox:/ITKDoxygen.tar.gz ITKDoxygen${TAG:+-${TAG}}.tar.gz
+docker cp itk-dox:/ITKDoxygenXML.tar.gz ITKDoxygenXML${TAG:+-${TAG}}.tar.gz
 
 # Remove the Docker container after copying the tarballs
 docker rm itk-dox
@@ -75,12 +75,12 @@ docker rm itk-dox
 
 ### 6. Extract the Doxygen Documentation
 Untar these tarballs to extract and verify the Doxygen documentation. 
-The `SimpleITKDoxygen` tarball contains the HTML documentation,
-while the `SimpleITKDoxygenXML` tarball contains the XML documentation.
+The `ITKDoxygen` tarball contains the HTML documentation,
+while the `ITKDoxygenXML` tarball contains the XML documentation.
 
 ```shell
-tar -xzf SimpleITKDoxygen${TAG:+-${TAG}}.tar.gz
-tar -xzf SimpleITKDoxygenXML${TAG:+-${TAG}}.tar.gz
+tar -xzf ITKDoxygen${TAG:+-${TAG}}.tar.gz
+tar -xzf ITKDoxygenXML${TAG:+-${TAG}}.tar.gz
 ```
 
 You may now view the Doxygen documentation by opening the `html/index.html` file.
