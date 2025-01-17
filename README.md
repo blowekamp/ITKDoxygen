@@ -1,7 +1,7 @@
 ITKDoxygen
 ==========
 
-[![][doxygen-img]][doxygen-link] [![][deployment-img]][deployment-link] [![][build-docker-img]][build-docker-link]
+[![][doxygen-img]][doxygen-link] [![][deployment-img]][deployment-link] [![][build-docker-img]][build-docker-link] [![][rtd-latest-img]][rtd-latest-link]
 
 [doxygen-img]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/Doxygen.yml/badge.svg
 [doxygen-link]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/Doxygen.yml
@@ -12,16 +12,20 @@ ITKDoxygen
 [build-docker-img]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/build-docker-image.yml/badge.svg
 [build-docker-link]: https://github.com/InsightSoftwareConsortium/ITKDoxygen/actions/workflows/build-docker-image.yml
 
+[rtd-latest-img]: https://readthedocs.org/projects/itkdoxygen/badge/?version=latest
+[rtd-latest-link]: https://app.readthedocs.org/projects/itkdoxygen/
+
 Overview
 --------
 
-This dockerfile has been created to facilitate the creation of
+This Dockerfile has been created to facilitate the creation of
 [ITK](https://github.com/InsightSoftwareConsortium/ITK)
 [Doxygen](https://doxygen.nl/)
 documentation in a reproducible way.
 
-The documentation is built nightly on the current/latest ITK commit, 
+The documentation is built nightly on the current/latest ITK commit,
 and deployed to GitHub pages at: https://insightsoftwareconsortium.github.io/ITKDoxygen/
+and to ReadTheDocs at: https://docs.itk.org/projects/doxygen/
 
 To create the documentation locally, run the following commands:
 
