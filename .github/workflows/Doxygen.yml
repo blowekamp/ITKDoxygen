@@ -3,6 +3,13 @@ name: doxygen
 on:
   push:
     branches: main
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'The ITK tag or hash with which to build the Doxygen documentation.'
+        required: false
+        default: 'master'
+        type: string
   schedule:
     - cron: '0 0 * * *'
 
@@ -20,8 +27,10 @@ jobs:
           docker build -f Dockerfile -t itk-doxygen .
 
       - name: Docker Doxygen generation
+        env:
+          TAG: ${{ github.event.inputs.tag || 'master' }}
         run: |
-          docker run --name itk-dox itk-doxygen
+          docker run --env TAG --name itk-dox itk-doxygen
           mkdir -p artifacts
           docker cp itk-dox:/ITKDoxygen.tar.gz artifacts/ITKDoxygen-${GITHUB_SHA}.tar.gz
           docker cp itk-dox:/ITKDoxygenXML.tar.gz artifacts/ITKDoxygenXML-${GITHUB_SHA}.tar.gz
