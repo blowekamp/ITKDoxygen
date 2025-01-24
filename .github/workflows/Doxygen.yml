@@ -98,8 +98,8 @@ jobs:
 
           popd
 
-          gh release delete -R InsightSoftwareConsortium/ITKDoxygen --cleanup-tag ${publish_tag} --yes
-          gh release create ${publish_tag} --notes="ITK Doxygen documentation built from the ITK main branch." --prerelease --title "ITKDoxygen ${publish_tag}" -R InsightSoftwareConsortium/ITKDoxygen ./artifacts/InsightDoxygen*
+          gh release delete --cleanup-tag ${publish_tag} --yes
+          gh release create ${publish_tag} --notes="ITK Doxygen documentation built from the ITK main branch." --prerelease --title "ITKDoxygen ${publish_tag}" ./artifacts/InsightDoxygen*
         env:
           GH_TOKEN: ${{ secrets.github_token }}
 
